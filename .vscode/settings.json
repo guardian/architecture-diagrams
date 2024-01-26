@@ -1,0 +1,7 @@
+{
+  "files.watcherExclude": {
+    "**/target": true
+  },
+  "c4.diagram.plantuml.enabled": true,
+  "c4.diagram.structurizr.enabled": true
+}
