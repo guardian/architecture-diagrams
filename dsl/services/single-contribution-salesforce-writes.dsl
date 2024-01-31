@@ -9,7 +9,6 @@ workspace extends ../main/catalog.dsl {
             cloudWatchAlarm = container "CloudWatch Alarm" "Listens to the metric of at least one message present in the DLQ"
         }
 
-        reader -> paymentApi "Makes a single contribution via" "HTTPS"
         csr -> salesforce "Manages single contributions using" "Salesforce Console"
         dev -> deadLetterQueue "Debugs failed messages in" "AWS Console"
         cloudWatchAlarm -> dev "Notifies failures to" "Email"

@@ -17,6 +17,7 @@ workspace {
             zuoraConfig = softwareSystem "Zuora Config" "Holds the configuration for Zuora components and allows import and export." "My Software"
             singleContributionSalesforceWrites = softwareSystem "Single Contribution Salesforce Writes" "Processes single contributions made via payment-api and creates records in Salesforce."
             paymentApi = softwareSystem "Payment Api" "Handles single contribution payments."
+            supportWorkers = softwareSystem "Support Workers" "Handles subscription payments."
         }
 
         reader -> csr "Asks questions to" "Telehpone / Chat"

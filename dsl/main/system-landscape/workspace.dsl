@@ -12,6 +12,14 @@ workspace extends ../catalog.dsl {
         filename ../../services/single-contribution-salesforce-writes.dsl
     }
 
+    !plugin FindRelationshipsPlugin {
+        filename ../../services/payment-api.dsl
+    }
+
+     !plugin FindRelationshipsPlugin {
+        filename ../../services/support-workers.dsl
+    }
+
     views {
         systemLandscape "SystemLandscape" {
             include *
