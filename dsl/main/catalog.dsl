@@ -8,9 +8,9 @@ workspace {
         accountant = person "Guardian Accountant" "An accountant within the Guardian."
         csr = person "Guardian CSR" "A Customer Service Representative within the Guardian."
 
-        zuora = softwareSystem "Zuora" "Stores customers transactions and subscriptions." "Database"
-        salesforce = softwareSystem "Salesforce" "Stores customers subscriptions, contributions and accounts details." "Database"
-        googleDrive = softwareSystem "Google Drive" "Stores the post-processed spreadsheets securely." "Database"
+        zuora = softwareSystem "Zuora" "Stores customers transactions and subscriptions." "Database, SaaS"
+        salesforce = softwareSystem "Salesforce" "Stores customers subscriptions, contributions and accounts details." "Database, SaaS"
+        googleDrive = softwareSystem "Google Drive" "Stores the post-processed spreadsheets securely." "Database, SaaS"
 
         group "Supporter Revenue" {
             zuoraOracleFusion = softwareSystem "Zuora Oracle Fusion" "Processes the exported Zuora Journal Run to make it compatible with Oracle Fusion." "My Software"
@@ -42,6 +42,12 @@ workspace {
             element "File" {
                 shape Folder
             }
+
+            element "SaaS" {
+                background #7E7E7E
+                color #ffffff
+            }
+
         }
     }
 
