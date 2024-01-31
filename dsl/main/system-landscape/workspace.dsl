@@ -20,7 +20,6 @@ workspace extends ../catalog.dsl {
         filename ../../services/support-workers.dsl
     }
 
-
     views {
         systemLandscape "SystemLandscape" {
             include *
@@ -28,6 +27,11 @@ workspace extends ../catalog.dsl {
         }
 
         systemContext zuora "SystemContextZuora" {
+            include *
+            autoLayout
+        }
+
+        systemContext salesforce "SystemContextSalesforce" {
             include *
             autoLayout
         }
