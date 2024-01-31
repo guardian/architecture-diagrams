@@ -1,32 +1,28 @@
-workspace extends ../catalog.dsl {
+workspace extends ./_catalog.dsl {
 
     !plugin FindRelationshipsPlugin {
-        filename ../../services/zuora-oracle-fusion.dsl
+        filename ./zuora-oracle-fusion.dsl
     }
 
     !plugin FindRelationshipsPlugin {
-        filename ../../services/zuora-config.dsl
+        filename ./zuora-config.dsl
     }
 
     !plugin FindRelationshipsPlugin {
-        filename ../../services/single-contribution-salesforce-writes.dsl
+        filename ./single-contribution-salesforce-writes.dsl
     }
 
     !plugin FindRelationshipsPlugin {
-        filename ../../services/payment-api.dsl
+        filename ./payment-api.dsl
     }
 
     !plugin FindRelationshipsPlugin {
-        filename ../../services/support-workers.dsl
+        filename ./support-workers.dsl
     }
 
     !plugin FindRelationshipsPlugin {
-        filename ../../services/holiday-stop-processor.dsl
+        filename ./holiday-stop-processor.dsl
     }
-
-
-
-
 
     views {
         systemLandscape "SystemLandscape" {

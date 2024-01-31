@@ -1,4 +1,4 @@
-workspace extends ../main/catalog.dsl {
+workspace extends ./_catalog.dsl {
 
     model {
         !ref holidayStopProcessor {
