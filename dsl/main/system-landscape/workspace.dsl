@@ -20,6 +20,7 @@ workspace extends ../catalog.dsl {
         filename ../../services/support-workers.dsl
     }
 
+
     views {
         systemLandscape "SystemLandscape" {
             include *

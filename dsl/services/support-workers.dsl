@@ -7,6 +7,7 @@ workspace extends ../main/catalog.dsl {
 
         reader -> stateMachine "Subscribes via" "HTTPS"
         stateMachine -> salesforce "Creates Salesforce contact in" "Salesforce Api"
+        stateMachine -> zuora "Creates Zuora subscription in" "Zuora Api"
     }
     
     views {
