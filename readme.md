@@ -1,4 +1,4 @@
-# C4 Model Architecture Diagrams Of The Guardian
+# The Guardian C4 Model Architecture As Code
 
 In this experiment, the goal is to use the Strcturizr DSL language to create C4 model as code for the whole P&E department.
 
