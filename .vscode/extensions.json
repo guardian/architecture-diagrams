@@ -1,4 +1,4 @@
 {
-  "recommendations": ["ciarant.vscode-structurizr"],
+  "recommendations": ["ciarant.vscode-structurizr", "dheovani.svg-viewer"],
   "unwantedRecommendations": []
 }
