@@ -10,13 +10,13 @@ workspace extends ../main/catalog.dsl {
         }
 
         reader -> paymentApi "Makes a single contribution via" "HTTPS"
-        csr -> salesforceCrm "Manages single contributions using" "Salesforce Console"
+        csr -> salesforce "Manages single contributions using" "Salesforce Console"
         dev -> deadLetterQueue "Debugs failed messages in" "AWS Console"
         cloudWatchAlarm -> dev "Notifies failures to" "Email"
         paymentApi -> singleContributionSalesforceWrites "Sends acquisition events to" "AWS Event Bridge"
-        singleContributionSalesforceWrites -> salesforceCrm "Creates single contribution records in" "JSON / HTTP"
+        singleContributionSalesforceWrites -> salesforce "Creates single contribution records in" "JSON / HTTP"
         paymentApi -> eventBusRule "Sends acquisition events to" "AWS Event Bridge"
-        lambdaFunction -> salesforceCrm "Creates single contribution records in" "JSON / HTTP"
+        lambdaFunction -> salesforce "Creates single contribution records in" "JSON / HTTP"
         eventBusRule -> sqsQueue "Sends 'payment-api' messages to" "JSON / HTTP"
         sqsQueue -> lambdaFunction "Sends events to" "Polling"
         deadLetterQueue -> sqsQueue "Redrives messages into" "JSON / HTTP"
