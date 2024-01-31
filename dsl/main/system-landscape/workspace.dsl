@@ -16,9 +16,14 @@ workspace extends ../catalog.dsl {
         filename ../../services/payment-api.dsl
     }
 
-     !plugin FindRelationshipsPlugin {
+    !plugin FindRelationshipsPlugin {
         filename ../../services/support-workers.dsl
     }
+
+    !plugin FindRelationshipsPlugin {
+        filename ../../services/holiday-stop-processor.dsl
+    }
+
 
 
     views {

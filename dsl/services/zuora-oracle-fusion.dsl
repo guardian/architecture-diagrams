@@ -30,16 +30,6 @@ workspace extends ../main/catalog.dsl {
             autoLayout
         }
 
-        systemContext zuora "SystemContextZuora" {
-            include *
-            autoLayout
-        }
-
-        systemContext googleDrive "SystemContextGoogleDrive" {
-            include *
-            autoLayout
-        }
-
         container zuoraOracleFusion "SystemContainer" {
             include *
             autoLayout

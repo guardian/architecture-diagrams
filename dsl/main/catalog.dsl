@@ -18,6 +18,7 @@ workspace {
             singleContributionSalesforceWrites = softwareSystem "Single Contribution Salesforce Writes" "Processes single contributions made via payment-api and creates records in Salesforce."
             paymentApi = softwareSystem "Payment Api" "Handles single contribution payments."
             supportWorkers = softwareSystem "Support Workers" "Handles subscription payments."
+            holidayStopProcessor = softwareSystem "Holiday Stop Processor" "Updates subscriptions in Zuora with holiday stop amendments."
         }
 
         reader -> csr "Asks questions to" "Telehpone / Chat"
@@ -44,7 +45,7 @@ workspace {
             }
 
             element "SaaS" {
-                background #7E7E7E
+                background #7C7C7C
                 color #ffffff
             }
 
