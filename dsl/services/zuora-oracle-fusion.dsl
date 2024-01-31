@@ -17,7 +17,7 @@ workspace extends ../main/catalog.dsl {
         zuora -> webhook "Sends a notification on completion of a Journal Run to" "HTTP"
         webhook -> function "Triggers" "AWS"
         function -> alarm "Triggers if there is an error" "AWS"
-        alarm -> dev "Sends an email if there is an alarm to" "AWS SNS"
+        // alarm -> dev "Sends an email if there is an alarm to" "AWS SNS"
         function -> googleDrive "Saves the post-processed spreadsheet in" "Google Drive"
         function -> accountant "Sends an email with link to file when the post-processed summary is finished to" "Google Drive"
         accountant -> googleDrive "Accesses the post-processed spreadsheet in" "Google Drive Email"
