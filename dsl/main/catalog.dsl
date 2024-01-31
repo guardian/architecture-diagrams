@@ -11,10 +11,13 @@ workspace {
         zuora = softwareSystem "Zuora" "Stores customers transactions and subscriptions." "Database"
         salesforce = softwareSystem "Salesforce" "Stores customers subscriptions, contributions and accounts details." "Database"
         googleDrive = softwareSystem "Google Drive" "Stores the post-processed spreadsheets securely." "Database"
-        zuoraOracleFusion = softwareSystem "Zuora Oracle Fusion" "Processes the exported Zuora Journal Run to make it compatible with Oracle Fusion." "My Software"
-        zuoraConfig = softwareSystem "Zuora Config" "Holds the configuration for Zuora components and allows import and export." "My Software"
-        singleContributionSalesforceWrites = softwareSystem "Single Contribution Salesforce Writes" "Processes single contributions made via payment-api and creates records in Salesforce."
-        paymentApi = softwareSystem "Payment API" "Handles single contribution payments."
+
+        group "Supporter Revenue" {
+            zuoraOracleFusion = softwareSystem "Zuora Oracle Fusion" "Processes the exported Zuora Journal Run to make it compatible with Oracle Fusion." "My Software"
+            zuoraConfig = softwareSystem "Zuora Config" "Holds the configuration for Zuora components and allows import and export." "My Software"
+            singleContributionSalesforceWrites = softwareSystem "Single Contribution Salesforce Writes" "Processes single contributions made via payment-api and creates records in Salesforce."
+            paymentApi = softwareSystem "Payment Api" "Handles single contribution payments."
+        }
 
         reader -> csr "Asks questions to" "Telehpone / Chat"
     }
