@@ -23,7 +23,7 @@ workspace extends ./__catalog.dsl {
     !plugin FindRelationshipsPlugin {
         filename ./holiday-stop-processor.dsl
     }
-
+    
     views {
         systemLandscape "SystemLandscape" {
             include *
