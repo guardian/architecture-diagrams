@@ -1,4 +1,4 @@
-workspace extends ./_catalog.dsl {
+workspace extends ./__catalog.dsl {
 
     model {
         !ref zuoraOracleFusion {

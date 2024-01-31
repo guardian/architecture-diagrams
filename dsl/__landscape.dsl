@@ -1,4 +1,4 @@
-workspace extends ./_catalog.dsl {
+workspace extends ./__catalog.dsl {
 
     !plugin FindRelationshipsPlugin {
         filename ./zuora-oracle-fusion.dsl
