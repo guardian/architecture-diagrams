@@ -10,8 +10,8 @@ workspace {
         csr = person "Guardian CSR" "A Customer Service Representative within the Guardian."
 
         // SaaS
-        zuora = softwareSystem "Zuora" "Stores customers transactions and subscriptions." "Database, SaaS"
         salesforce = softwareSystem "Salesforce" "Stores customers subscriptions, contributions and accounts details." "Database, SaaS"
+        zuora = softwareSystem "Zuora" "Stores customers transactions and subscriptions." "Database, SaaS"
         googleDrive = softwareSystem "Google Drive" "Stores the post-processed spreadsheets securely." "Database, SaaS"
 
         // Supporter Revenue

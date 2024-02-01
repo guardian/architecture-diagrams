@@ -5,7 +5,7 @@ workspace extends ./__catalog.dsl {
             function = container "Lambda Function" "TBC." "AWS Lambda"
         }
 
-        dev -> zuoraConfig "Uses CLI commands" "Command Line"
+        // dev -> zuoraConfig "Uses CLI commands" "Command Line"
         function -> zuora "Imports or exports canonical config programmatically" "Script"
     }
     
